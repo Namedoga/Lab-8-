@@ -47,5 +47,10 @@ console.log(copiedStudent);
 
 
 
-let modifiedStudent = {copiedStudent , graduationYear: 2026};
+let modifiedStudent = {...copiedStudent, graduationYear: 2026};
 console.log(modifiedStudent);
+
+let newCourse = ["Math", "English", "Gym"];
+let mixedCourse = [student.course,...newCourse];
+
+console.log(mixedCourse); 
