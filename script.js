@@ -32,4 +32,9 @@ console.log(name);
 console.log(course); 
 
 
+let testScores = [ 82 , 99, 42 , 44 ];
 
+let [first, second, third , fourth] = testScores; 
+
+console.log(first);
+console.log(second);
