@@ -38,3 +38,9 @@ let [first, second, third , fourth] = testScores;
 
 console.log(first);
 console.log(second);
+
+// Part Four: The Spread Operator
+
+
+let copiedStudent = { ...student };
+console.log(copiedStudent); 
