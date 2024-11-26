@@ -42,5 +42,10 @@ console.log(second);
 // Part Four: The Spread Operator
 
 
-let copiedStudent = { ...student };
+let copiedStudent = {student};
 console.log(copiedStudent); 
+
+
+
+let modifiedStudent = {copiedStudent , graduationYear: 2026};
+console.log(modifiedStudent);
