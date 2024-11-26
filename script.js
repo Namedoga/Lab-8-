@@ -17,21 +17,19 @@ console.log(student.greet())
 
 
 // Part Two: Working with JSON
+let studentJSON = JSON.stringify(student);
+console.log(studentJSON);
 
-let Studentobj = {
-    name: "Othiel",
-    age: 27
-};
-let jsonString = JSON.stringify(Studentobj);
-console.log(jsonString); 
-
-let stringJson = '{"name":"Othniel","age":27}';
-let jsonObj = JSON.parse(stringJson);
-console.log(jsonObj.name); 
-
+let parsedStudent = JSON.parse(studentJSON);
+console.log(parsedStudent);
 // Part Three: Using Destructuring Assignment   
 
 
 
-ssasa
+let {course , name } = student;
+
+console.log(name);
+console.log(course); 
+
+
 
