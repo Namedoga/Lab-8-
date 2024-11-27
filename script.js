@@ -50,7 +50,7 @@ let mixedCourse = [student.course,...newCourse];
 
 console.log(mixedCourse); 
 
-// Part five: Object Methods
+// Part five: Object Methods 
 
 
 student.addCourse("History");
@@ -59,3 +59,5 @@ console.log(student.course);
 
 let total = student.totalCourses();
 console.log(total)
+
+
