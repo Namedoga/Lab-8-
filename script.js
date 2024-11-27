@@ -4,17 +4,19 @@ let student = {
 name: "Othniel",
 age: 27, 
 enrolled: true,
-course: "JavaScript", 
-greet: function() {
-    console.log("Hello my name is " + this.name , "and my age is " + this.age, " I am also enrolled: " + this.enrolled ,  "doing a course called: " + this.course ); 
+course: ["JavaScript"], 
+addCourse(course) {
+    this.course.push(course);
+},
+
+
+totalCourses() {
+    return this.course.length;
 }
 };
 
-
 console.log(student.age)
 console.log(student.name)
-console.log(student.greet())
-
 
 // Part Two: Working with JSON
 let studentJSON = JSON.stringify(student);
@@ -24,18 +26,11 @@ let parsedStudent = JSON.parse(studentJSON);
 console.log(parsedStudent);
 // Part Three: Using Destructuring Assignment   
 
-
-
 let {course , name } = student;
-
 console.log(name);
 console.log(course); 
-
-
 let testScores = [ 82 , 99, 42 , 44 ];
-
 let [first, second, third , fourth] = testScores; 
-
 console.log(first);
 console.log(second);
 
@@ -54,3 +49,13 @@ let newCourse = ["Math", "English", "Gym"];
 let mixedCourse = [student.course,...newCourse];
 
 console.log(mixedCourse); 
+
+// Part five: Object Methods
+
+
+student.addCourse("History");
+console.log(student.course); 
+
+
+let total = student.totalCourses();
+console.log(total)
